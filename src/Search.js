@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Screen2 = () => {
+const Search = () => {
   return (
     <div>
-        Screen2
+      Search
     </div>
   )
 }
 
-export default Screen2
+export default Search
