@@ -1,13 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body {
   margin: 0;
+  background-color: #13131A;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
+  font-family: 'Poppins';
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.movies-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.movie-card {
+  text-align: center;
+  max-width: 230px; /* Set a maximum width for each movie card */
+  font-size: medium;
+}
+
+.movie-card img {
+  width: 100%; /* Make the image fill the entire width of its container */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Add this CSS to your stylesheet */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1C1C24;
+  color: white;
+  font-size: 15px;
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
+
+}
+.brand-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.navbar-center a,
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 100;
+}
+
+.red-box {
+  background-color: #E14658;
+  padding: 5px 4px;
+  border-radius: 5px;
+}
+
+.red-box a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Optional: Change color on hover for better user experience */
+.navbar-center a:hover,
+.navbar-right a:hover,
+.red-box a:hover {
+  color: #ccc; /* Set the text color on hover (a slightly different shade of white) */
+}
+
+
+.navbar-center span {
+  margin: 0 15px;
+}
+
+.navbar-right span {
+  margin: 0 10px;
+}
+
+
+.movie-card h2 {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.movie-card h1 {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+
+.movie-card h2:hover {
+  color: #ccc;
+
+}
+
+/* Add this CSS to your stylesheet */
+.movie-card {
+  position: relative;
+  /* Rest of your styles for movie card */
+}
+
+.movie-poster-container {
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Example background color */
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
 }

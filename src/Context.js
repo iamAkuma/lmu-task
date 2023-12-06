@@ -8,7 +8,7 @@ import React, { useContext, useEffect, useState } from "react";
 
 const AppContext = React.createContext();
 
-const API_URL = `https://www.omdbapi.com/?i=tt3896198&apikey=886a0ad8&s=jawan`;
+const API_URL = `https://www.omdbapi.com/?i=tt3896198&apikey=886a0ad8&s=avengers`;
 
 //Create Provider function now
 const AppProvider = ({ children }) => {
