@@ -9,7 +9,11 @@ const Movies = () => {
   const moviesToShow = movie.slice(0, 3);
 
   // Example array of dates (replace with your actual dates)
-  const dates = ["December 8th, 2023 | Kathmandu, Nepal", "December 9th, 2023 | Kathmandu, Nepal", "December 10th, 2023 | Kathmandu, Nepal"];
+  const dates =
+  ["December 8th, 2023 | Kathmandu, Nepal",
+   "December 9th, 2023 | Kathmandu, Nepal",
+    "December 10th, 2023 | Kathmandu, Nepal"
+  ];
 
   return (
     <div className="movies-container">
