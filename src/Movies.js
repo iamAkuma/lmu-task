@@ -6,7 +6,7 @@ const Movies = () => {
   const { movie } = useGlobalContext();
 
   // Limit the number of movies to be displayed
-  const moviesToShow = movie.slice(0, 3);
+  // const moviesToShow = movie.slice(0, 3);
 
   // Example array of dates (replace with your actual dates)
   const dates =
@@ -17,7 +17,7 @@ const Movies = () => {
 
   return (
     <div className="movies-container">
-      {moviesToShow.map((currMovie, index) => (
+      {movie.map((currMovie, index) => (
         <div key={currMovie.imdbID} className="movie-card">
           <NavLink to={`movie/${currMovie.imdbID}`}>
             <div className="movie-poster-container">
